@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float r,area;
+    printf("GIVE THE RADIUS : ");
+    scanf("%f",&r);
+    area=3.14*r*r;
+    printf("\nAREA OF THE GIVEN RADIUS OF %.3f CIRCLE IS %.3f",r,area);
+}
