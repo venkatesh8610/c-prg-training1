@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("please enter the values to right shift and to how many shift you have to do : \n");
+    scanf("%d%d",&a,&b);
+    c=a>>b;
+    printf("the right shift of %d and %d is %d ",a,b,c);
+    return 0;
+}
