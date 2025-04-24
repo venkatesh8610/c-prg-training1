@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b;
+    printf("please enter the two float values\n");
+    scanf("%f%f",&a,&b);
+    printf("the multiply of %f and %f is %f ",a,b,a*b);
+    return 0;
+}
