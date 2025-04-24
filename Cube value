@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float l,cube;
+    printf("GIVE THE VALUE TO GET CUBE VALUE :");
+    scanf("%f",&l);
+    cube=l*l*l;
+    printf("\nTHE CUBE OF  GIVEN VALUE %.3f IS %.3f",l,cube);
+}
