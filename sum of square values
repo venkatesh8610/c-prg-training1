@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float l,b,square;
+    printf("GIVE THE TWO NUMBERS FOR SUM OF SQUARE ");
+    scanf("%f%f",&l,&b);
+    square=((l*l)+(b*b));
+    printf("\nTHE SUM OF SQUARE FOR GIVEN VALUE %.3f AND  %.3f IS %.3f",l,b,square);
+}
