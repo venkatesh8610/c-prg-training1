@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float l,area;
+    printf("GIVE THE LENGTH OF SQUARE : ");
+    scanf("%f",&l);
+    area=l*l;
+    printf("\nAREA OF THE GIVEN LENGTH OF %.3f SQUARE IS %.3f",l,area);
+}
