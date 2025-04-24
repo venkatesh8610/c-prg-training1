@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float l,b,area;
+    printf("GIVE THE LENGTH AND BREATH OF RECTANGLE \n");
+    scanf("%f%F",&l,&b);
+    area=l*b;
+    printf("AREA OF THE GIVEN LENGTH %.3f AND BREATH %.3f OF RECTANGLE IS %.3f",l,b,area);
+}
