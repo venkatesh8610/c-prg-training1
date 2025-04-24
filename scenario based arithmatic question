@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float total,rotten,good;
+    printf("GIVE THE TOTAL AND ROTTEN MANGOES \n");
+    scanf("%f%f",&total,&rotten);
+    good=total-rotten;
+    printf("THE GOOD MANGOES ARE %.3f",good);
+}
