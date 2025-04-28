@@ -1,0 +1,49 @@
+#include <stdio.h> 
+int main() 
+{ 
+    int choice; 
+    printf("Enter a number of month (1-12): \n"); 
+    scanf("%d", &choice); 
+    switch (choice) { 
+        case 1: 
+            printf("JANUARY HAD 31 DAYS\n"); 
+            break; 
+        case 2: 
+            printf("FEBRUARY HAD 28 AND 29 IN LEAP YEAR\n"); 
+            break; 
+        case 3: 
+            printf("MARCH HAD 31 DAYS\n"); 
+            break; 
+        case 4: 
+            printf("APRIL HAD 30 DAYS\n"); 
+            break; 
+        case 5: 
+            printf("MAY HAD 31 DAYS\n"); 
+            break; 
+        case 6: 
+            printf("JUNE HAD 30 DAYS\n"); 
+            break; 
+        case 7: 
+            printf("JULY HAD 31 DAYS\n"); 
+            break;
+        case 8: 
+            printf("AUGUST HAD 31 DAYS\n"); 
+            break; 
+        case 9: 
+            printf("SEPTEMBER HAD 30 DAYS\n"); 
+            break; 
+        case 10: 
+            printf("OCTOBER HAD 31 DAYS\n"); 
+            break; 
+        case 11: 
+            printf("NOVEMBER HAD 30 DAYS\n"); 
+            break; 
+        case 12: 
+            printf("DECEMBER HAD 31 DAYS\n"); 
+            break; 
+        default: 
+            printf("Invalid number( there is no such month number).\n"); 
+    } 
+    return 0; 
+
+}
