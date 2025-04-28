@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{
+    char s,g;
+    int y;
+    printf("Enter your marital status(M/U):");
+    scanf("%c",&s);
+    printf("Enter your Gender(M/F):");
+    scanf(" %c",&g);
+    printf("Enter your Age:");
+    scanf("%d",&y);
+    if(s=='M') 
+    {
+        printf("YOUR INSURED\n");
+    } 
+    else if(s=='U'&&g=='M'&&y>30) 
+    {
+        printf("YOUR INSURED\n");
+    }
+    else if(s=='U'&&g=='F'&&y>25)
+    {
+        printf("YOUR INSURED\n");
+    }
+    else{
+     printf("YOUR not INSURED\n");   
+    }
+    return 0;
+}
