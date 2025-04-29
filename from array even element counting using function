@@ -1,0 +1,28 @@
+#include<stdio.h>
+int odd(int vote[],int n);
+int main()
+{
+ int i,vote[100],n,even;
+ printf("enter the n :");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+     printf("enter the %d element",i+1);
+     scanf("%d",&vote[i]);
+ }
+ even=odd(vote,n);
+ printf("the total number of even number in the array is %d",even);
+ return 0;
+}
+int odd(int vote[],int n)
+{
+    int i,count=0;
+    for(i=0;i<n;i++)
+    {
+        if(vote[i]%2==0)
+        {
+            count++;
+        }
+    }
+    return count;
+}
