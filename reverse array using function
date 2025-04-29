@@ -1,0 +1,26 @@
+#include<stdio.h>
+int odd(int t[],int n);
+int main()
+{
+ int i,t[100],n,even;
+ printf("enter the n : ");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+     printf("enter the %d element : ",i+1);
+     scanf("%d",&t[i]);
+ }
+    printf(" the reversed order: ");
+     odd(t,n);
+ 
+ return 0;
+}
+int odd(int t[],int n)
+{
+    int i;
+    for(i=n-1;i>=0;i--)
+    {
+        printf(" %d ",t[i]);
+    }
+    
+}
