@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[20][20],b[20][20],c[20][20],i,j,k,arows,acolumns,brows,bcolumns,sum=0;
+    printf("Enter the rows and columns of matrix a\n");
+    scanf("%d%d",&arows,&acolumns);
+    printf("Enter the rows and columns of matrix b\n");
+    scanf("%d%d",&brows,&bcolumns);
+    printf("Enter the matrix a elements\n");
+    for(i=0;i<arows;i++)
+    {
+        for(j=0;j<acolumns;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter the matrix b elements\n");
+    for(i=0;i<brows;i++)
+    {
+        for(j=0;j<bcolumns;j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    if(arows==bcolumns)
+    {
+        for(i=0;i<arows;i++)
+        {
+            for(j=0;j<bcolumns;j++)
+            {
+                for(k=0;k<acolumns;k++)
+                {
+                    sum=sum+a[i][k]*b[k][j];
+                }
+                c[i][j]=sum;
+                sum=0;
+            }
+        }
+    }
+    else
+    {
+        printf("plese enter valid format to multiply the matrix\n");
+    }
+    printf("The multiplication of matrix a and b is\n");
+    for(i=0;i<arows;i++)
+    {
+        for(j=0;j<bcolumns;j++)
+        {
+            printf(" %d ",c[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
